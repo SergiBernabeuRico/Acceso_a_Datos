@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!-- Fichero de configuración de Hibernate-->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Datos de conexión a postgresql-->
+        <property name="connection.url">jdbc:postgresql://localhost:5432/prueba</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">MGMJ4BalonmanoSB14$</property>
+
+        <!-- Hibernate crear´/actualizará el esquema si hace falta -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Muestra por consola el sql que ejecuta -->
+        <property name="show_sql">true</property>
+
+        <!-- Aquí le decimos a Hibernate que entidadd debe mapear -->
+        <mapping class="org.example.Empleado"/>
+        <mapping class="org.example.Director"/>
+        <mapping class="org.example.Disco"/>
+        
+    </session-factory>
+</hibernate-configuration>
