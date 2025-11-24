@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c109648c-0b7f-4069-a210-dc660485a5b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ej1/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,8 @@
     "Application.ej1.executor": "Run",
     "Application.ej1b.executor": "Run",
     "Application.ej2b.executor": "Run",
+    "Application.org.example.AppDirector.executor": "Run",
+    "Application.org.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -66,69 +67,6 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Ej4Sta">
-    <configuration name="Ej4Sta" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dam2.Ej4Sta" />
-      <module name="Examen1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dam2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ej1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dam2.ej1" />
-      <module name="Acceso_a_datos" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\sergi\Deskop\Acceso_a_Datos\Examen1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dam2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ej1b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ej1b" />
-      <module name="Examen1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ej2b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dam2.ej2b" />
-      <module name="Examen1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dam2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Ej4Sta" />
-      <item itemvalue="Application.ej1b" />
-      <item itemvalue="Application.ej2b" />
-      <item itemvalue="Application.ej1" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Ej4Sta" />
-        <item itemvalue="Application.ej2b" />
-        <item itemvalue="Application.ej1b" />
-        <item itemvalue="Application.ej1" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c109648c-0b7f-4069-a210-dc660485a5b0" name="Changes" comment="" />
