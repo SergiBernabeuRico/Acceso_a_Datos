@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c109648c-0b7f-4069-a210-dc660485a5b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c109648c-0b7f-4069-a210-dc660485a5b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +28,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/SergiBernabeuRico/Acceso_a_Datos.git",
-    "accountId": "51582499-c69a-458a-b92f-04c81d915ef7"
+    "url": "https://github.com/SergiBernabeuRico/Acceso_a_Datos",
+    "accountId": "8284c905-b3af-4f7b-b39f-25ed94aafafe"
   }
 }]]></component>
   <component name="ProblemsViewState">
@@ -60,13 +58,20 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sergi/Desktop/Acceso_a_Datos",
+    "last_opened_file_path": "/home/ciclosm/Escritorio/Acceso_a_Datos",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c109648c-0b7f-4069-a210-dc660485a5b0" name="Changes" comment="" />
