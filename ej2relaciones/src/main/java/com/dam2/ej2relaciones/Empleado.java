@@ -6,6 +6,9 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "empleados")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "tipo_empleado",discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorValue("Empl")
 public class Empleado implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

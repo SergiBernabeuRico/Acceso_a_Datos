@@ -16,6 +16,8 @@ public class Empresa implements Serializable {
     private String nom;
     @OneToMany(mappedBy = "empresa", cascade = CascadeType.PERSIST)
     private List<Empleado> empleados;
+    @ManyToMany(mappedBy = "empresas", cascade = CascadeType.PERSIST)
+    private List<Inversor> inversores;
 
     public Empresa() {
     }
@@ -23,11 +25,13 @@ public class Empresa implements Serializable {
     public Empresa(String nom) {
         this.nom = nom;
         empleados = new ArrayList<>();
+        inversores = new ArrayList<>();
     }
 
     public Empresa(String nom, List<Empleado> empleados) {
         this.nom = nom;
         this.empleados = empleados;
+        inversores = new ArrayList<>();
     }
 
     public Long getId() {
@@ -52,6 +56,14 @@ public class Empresa implements Serializable {
 
     public void setEmpleados(List<Empleado> empleados) {
         this.empleados = empleados;
+    }
+
+    public List<Inversor> getInversores() {
+        return inversores;
+    }
+
+    public void setInversores(List<Inversor> inversores) {
+        this.inversores = inversores;
     }
 
     @Override

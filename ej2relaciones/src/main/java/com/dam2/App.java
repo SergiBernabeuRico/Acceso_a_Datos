@@ -1,9 +1,6 @@
 package com.dam2;
 
-import com.dam2.ej2relaciones.Deporte;
-import com.dam2.ej2relaciones.Empleado;
-import com.dam2.ej2relaciones.Empresa;
-import com.dam2.ej2relaciones.Usuario;
+import com.dam2.ej2relaciones.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -22,7 +19,9 @@ public class App
 
         Empresa empresa1 = new Empresa("Congelados Martínez");
         Empleado empleado1 = new Empleado("Pepe Pérez",2000,empresa1);
-        Empleado empleado2 = new Empleado("Antonio López",2222,empresa1);
+        Empleado empleado2 = new Jefe("Antonio López",2222,"recursos humanos");
+        empleado2.setEmpresa(empresa1);
+
         empresa1.getEmpleados().add(empleado1);
         empresa1.getEmpleados().add(empleado2);
         empleado1.setDeporte(new Deporte("tenis"));
@@ -33,9 +32,23 @@ public class App
         usuario2.setEmpleado(empleado2);
         empleado1.setUsuario(usuario1);
         empleado2.setUsuario(usuario2);
+        Inversor inversor1 = new Inversor("David García");
+        inversor1.getEmpresas().add(empresa1);
+        Inversor inversor2 = new Inversor("Inversores del Sureste");
+        inversor2.getEmpresas().add(empresa1);
+        Empresa empresa2 = new Empresa("Electricidad Fuster");
+        inversor2.getEmpresas().add(empresa2);
+        empresa1.getInversores().add(inversor1);
+        empresa1.getInversores().add(inversor2);
+        empresa2.getInversores().add(inversor2);
+
+        Empleado empleado3 = new Tecnico("Carlos Cosa",3333,"informática");
+        empleado3.setEmpresa(empresa2);
+        empresa2.getEmpleados().add(empleado3);
         //ss.persist(empleado1);
         //ss.persist(empleado2);
         ss.persist(empresa1);
+        ss.persist(empresa2);
         tr.commit();
 
     }
