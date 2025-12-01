@@ -1,4 +1,4 @@
-package org.example.ej2relaciones;
+package com.dam2.ej2relaciones;
 
 import jakarta.persistence.*;
 
@@ -9,14 +9,18 @@ import java.io.Serializable;
 public class Empleado implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;    // clave primaria
+    protected Long id;    // clave primaria
     @Column(name ="nombre")
-    private String nom;
+    protected String nom;
     @Column
-    private double salario;
+    protected double salario;
     @ManyToOne
     @JoinColumn(name = "id_empresa")
-    private Empresa empresa;
+    protected Empresa empresa;
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    protected Deporte deporte;
+    @OneToOne(mappedBy = "empleado", cascade = CascadeType.PERSIST)
+    protected Usuario usuario;
 
     public Empleado() {
     }
@@ -62,6 +66,22 @@ public class Empleado implements Serializable {
 
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
+    }
+
+    public Deporte getDeporte() {
+        return deporte;
+    }
+
+    public void setDeporte(Deporte deporte) {
+        this.deporte = deporte;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     @Override

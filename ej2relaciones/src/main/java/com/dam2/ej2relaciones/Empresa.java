@@ -1,8 +1,9 @@
-package org.example.ej2relaciones;
+package com.dam2.ej2relaciones;
 
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,7 +14,7 @@ public class Empresa implements Serializable {
     private Long id;
     @Column(name = "nombre")
     private String nom;
-    @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL) // Cuando persista la empresa, persistiran también los empleados
+    @OneToMany(mappedBy = "empresa", cascade = CascadeType.PERSIST)
     private List<Empleado> empleados;
 
     public Empresa() {
@@ -21,6 +22,7 @@ public class Empresa implements Serializable {
 
     public Empresa(String nom) {
         this.nom = nom;
+        empleados = new ArrayList<>();
     }
 
     public Empresa(String nom, List<Empleado> empleados) {
